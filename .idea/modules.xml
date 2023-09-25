@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DroidKeyStoneCorrection/DroidKeyStoneCorrection.iml" filepath="$PROJECT_DIR$/DroidKeyStoneCorrection/DroidKeyStoneCorrection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DroidTvSettings.iml" filepath="$PROJECT_DIR$/.idea/DroidTvSettings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DroidTwoPanelSettingsLib/DroidTwoPanelSettingsLib.iml" filepath="$PROJECT_DIR$/DroidTwoPanelSettingsLib/DroidTwoPanelSettingsLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Settings/Settings.iml" filepath="$PROJECT_DIR$/Settings/Settings.iml" />
+    </modules>
+  </component>
+</project>

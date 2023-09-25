@@ -1,0 +1,52 @@
+
+
+android_app {
+    name: "DroidTvSettings",
+
+    system_ext_specific: true,
+    platform_apis: true,
+    optimize: {
+        enabled: false,
+        proguard_flags_files: ["proguard.cfg"],
+    },
+    overrides: ["TvSettings"],
+    certificate: "platform",
+
+
+    libs: [
+        "droidlogic",
+        "droidlogic-tv",
+    ],
+
+    static_libs: [
+        "androidx.recyclerview_recyclerview",
+        "androidx.preference_preference",
+        "androidx.appcompat_appcompat",
+        "androidx.legacy_legacy-preference-v14",
+        "androidx.leanback_leanback-preference",
+        "androidx.leanback_leanback",
+        "androidx.lifecycle_lifecycle-extensions",
+        "androidx.lifecycle_lifecycle-common-java8",
+        "androidx.annotation_annotation",
+        "DroidTwoPanelSettingsLib",
+        "android-arch-lifecycle-common-java8",
+    ],
+
+    resource_dirs: ["res"],
+
+    srcs: [
+        "src/**/*.java",
+        "src/**/I*.aidl",
+    ],
+    required: ["com.android.tv.settings.amlogic.xml"],
+
+}
+
+prebuilt_etc {
+    name: "com.android.tv.settings.amlogic.xml",
+
+    src: "com.android.tv.settings.amlogic.xml",
+    sub_dir: "permissions",
+    system_ext_specific: true,
+
+}
